@@ -178,9 +178,21 @@ p {
 }
 
 .hero__cta {
+    cursor: pointer;
+    background-color: var(--cl-grullo);
+    border-radius: 100px;
+    padding: 0.25em 1.5em;
+
     font-family: 'Oswald', serif;
     font-weight: 700;
     font-size: var(--fs-600);
+    text-transform: uppercase;
+
+    transition: opacity 250ms ease;
+}
+
+.hero__cta:hover {
+    opacity: 0.9;
 }
 
 
