@@ -1,7 +1,20 @@
 :root {
+    --fs-400: 1.125rem;
+    --fs-500: 1.3125rem;
+    --fs-600: 1.5rem;
+    --fs-700: 1.875rem;
+    --fs-900: 2.25rem;
+    --fs-xl: clamp(2.25rem, 5vw + 1rem, 5.625rem);
+
+    --cl-dark-blue: #2E323F;
+    --cl-medium-blue: #3B4050;
+    --cl-light-blue: #6F737F;
+    --cl-grullo: #A59678;
+    --cl-white: #FFFFFF;
+
     font-family: "Monserrat";
     font-weight: 400;
-    font-size: 1.125rem;    
+    font-size: var(--fs-400);    
 }
 
 *,
@@ -17,8 +30,14 @@ body {
 
 header {
     padding: 1em 0;
-    background-color: #2E323F;
+    background-color: var(--cl-dark-blue);
     text-align: center;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
 }
 
 .container {
@@ -125,16 +144,62 @@ header {
 .nav__item--button {
     padding: 0.25em 0.75em;
     border-radius: 100px;
-    background-color: white;
+    background-color: var(--cl-white);
 }
 
 .nav__item--button > .nav__link {
-    color: #2E323F;
+    color: var(--cl-dark-blue);
 }
 
 .nav__link {
-    color: white;   
+    color: var(--cl-white);   
     text-decoration: none;    
+}
+
+/* hero section */
+.hero {
+    padding: 100px 0;
+    color: var(--cl-white);
+    background-color: var(--cl-medium-blue);
+}
+
+.hero__title {
+    margin-bottom: 1.2em;
+    font-family: 'Oswald', serif;
+    font-weight: 700;
+    font-size: var(--fs-xl);
+    line-height: 110%;
+}
+
+.hero__title--highlighted {
+    color: var(--cl-grullo);
+}
+
+.hero__subtitle {
+    margin-bottom: 1.5em;
+    font-size: var(--fs-600);
+}
+
+.hero__cta {
+    cursor: pointer;
+    background-color: var(--cl-grullo);
+    border-radius: 100px;
+    padding: 0.25em 1.5em;
+
+    font-family: 'Oswald', serif;
+    font-weight: 700;
+    font-size: var(--fs-600);
+    text-transform: uppercase;
+
+    transition: opacity 250ms ease;
+}
+
+.hero__cta:hover {
+    opacity: 0.75;
+}
+
+.hero__column--right {
+    align-self: flex-end;
 }
 
 @media only screen and (min-width: 600px) {
@@ -161,5 +226,13 @@ header {
     .nav__list {
         flex-direction: row;
         align-items: center;
+    }
+
+    .hero > .flex {
+        gap: 1em;
+    }
+
+    .hero__title {
+        margin-bottom: 0;
     }
 }
