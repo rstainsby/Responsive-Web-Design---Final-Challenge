@@ -6,6 +6,12 @@
     --fs-900: 2.25rem;
     --fs-xl: 5.625rem;
 
+    --cl-dark-blue: #2E323F;
+    --cl-medium-blue: #3B4050;
+    --cl-light-blue: #6F737F;
+    --cl-grullo: #A59678;
+    --cl-white: #FFFFFF;
+
     font-family: "Monserrat";
     font-weight: 400;
     font-size: var(--fs-400);    
@@ -24,7 +30,7 @@ body {
 
 header {
     padding: 1em 0;
-    background-color: #2E323F;
+    background-color: var(--cl-dark-blue);
     text-align: center;
 }
 
@@ -132,15 +138,15 @@ header {
 .nav__item--button {
     padding: 0.25em 0.75em;
     border-radius: 100px;
-    background-color: white;
+    background-color: var(--cl-white);
 }
 
 .nav__item--button > .nav__link {
-    color: #2E323F;
+    color: var(--cl-dark-blue);
 }
 
 .nav__link {
-    color: white;   
+    color: var(--cl-white);   
     text-decoration: none;    
 }
 
