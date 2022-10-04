@@ -195,7 +195,7 @@ p {
 }
 
 .hero__cta:hover {
-    opacity: 0.9;
+    opacity: 0.75;
 }
 
 .hero__column--right {
