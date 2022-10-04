@@ -1,0 +1,165 @@
+:root {
+    font-family: "Monserrat";
+    font-weight: 400;
+    font-size: 1.125rem;    
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 1em 0;
+    background-color: #2E323F;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: block;
+}
+
+/* nav toggle & hamburger icon */
+
+.nav-toggle {
+    position: absolute;
+    left: 0;
+
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: opacity 250ms ease;
+}
+
+.nav-toggle:hover {
+    opacity: 0.75;
+}
+
+.nav-toggle--visible {
+    visibility: hidden;
+}
+
+.hamburger {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    height: 3px; 
+    background-color: black;
+    border-radius: 100px;   
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+}
+
+.hamburger::before {
+    transform:translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+/* nav */
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 2em;
+    margin-top: 1.5em;
+
+    /*hiding element rather than removing helps with accessibility*/
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.nav__item {
+    width: fit-content;
+    transition: opacity 250ms ease;
+}
+
+.nav__item:hover {
+    opacity: 0.7;
+}
+
+.nav__item--button {
+    padding: 0.25em 0.75em;
+    border-radius: 100px;
+    background-color: white;
+}
+
+.nav__item--button > .nav__link {
+    color: #2E323F;
+}
+
+.nav__link {
+    color: white;   
+    text-decoration: none;    
+}
+
+@media only screen and (min-width: 600px) {
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav {        
+        margin: 0;
+        flex-direction: row;
+
+        visibility: visible;
+        height: auto;
+        position: relative;  
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        align-items: center;
+    }
+}
