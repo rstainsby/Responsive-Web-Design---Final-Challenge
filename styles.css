@@ -34,6 +34,12 @@ header {
     text-align: center;
 }
 
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
 .container {
     position: relative;
     width: 80%;
@@ -149,6 +155,34 @@ header {
     color: var(--cl-white);   
     text-decoration: none;    
 }
+
+/* hero section */
+.hero {
+    color: var(--cl-white);
+    background-color: var(--cl-medium-blue);
+}
+
+.hero__title {
+    font-family: 'Oswald', serif;
+    font-weight: 700;
+    font-size: var(--fs-xl);
+    line-height: 110%;
+}
+
+.hero__title--highlighted {
+    color: var(--cl-grullo);
+}
+
+.hero__subtitle {
+    font-size: var(--fs-600);
+}
+
+.hero__cta {
+    font-family: 'Oswald', serif;
+    font-weight: 700;
+    font-size: var(--fs-600);
+}
+
 
 @media only screen and (min-width: 600px) {
     .flex {
