@@ -40,6 +40,12 @@ p {
     margin: 0;
 }
 
+p {
+    font-family: "Monserrat";
+    font-weight: 400;
+    font-size: var(--fs-400);    
+}
+
 .container {
     position: relative;
     width: 80%;
@@ -47,7 +53,8 @@ p {
 }
 
 .flex {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 /* nav toggle & hamburger icon */
@@ -201,6 +208,30 @@ p {
 .hero__column--right {
     align-self: flex-end;
 }
+
+/* features */
+.features {
+    padding: 5em 0;
+    background-color: #dcdcdc;
+}
+
+.features > .flex {
+    gap: 4em;
+}
+
+.feature-info {
+    text-align: center;
+}
+
+.feature-info__title {
+    margin-bottom: 0.6em;
+    color: var(--cl-grullo);
+    font-family: 'Oswald', serif;
+    font-size: var(--fs-700);
+    font-weight: 700;
+}
+
+
 
 @media only screen and (min-width: 600px) {
     .flex {
