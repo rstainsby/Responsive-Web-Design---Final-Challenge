@@ -83,6 +83,11 @@
 }
 
 @media only screen and (min-width: 700px) {
+    .navbar > .flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     .nav {        
         margin: 0;
         flex-direction: row;
