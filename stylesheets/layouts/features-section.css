@@ -15,9 +15,6 @@
 .feature-info__title {
     margin-bottom: 0.6em;
     color: var(--cl-grullo);
-    font-family: 'Oswald', serif;
-    font-size: var(--fs-700);
-    font-weight: 700;
 }
 
 /* about section */
@@ -32,9 +29,6 @@
 .about__title {
     margin-bottom: 0.6em;
     color: var(--cl-grullo);
-    font-family: 'Oswald', serif;
-    font-size: var(--fs-700);
-    font-weight: 700;
 }
 
 .about__main-text {
