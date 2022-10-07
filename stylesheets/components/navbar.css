@@ -9,7 +9,7 @@
     border-style: none;
     border-radius: 50%;
     background-color: white;
-    transition: opacity 250ms ease;
+    transition: var(--trns-button-hover);
 }
 
 .nav-toggle:hover {
@@ -59,7 +59,7 @@
 
 .nav__item {
     width: fit-content;
-    transition: opacity 250ms ease;
+    transition: var(--trns-button-hover);
 }
 
 .nav__item:hover {

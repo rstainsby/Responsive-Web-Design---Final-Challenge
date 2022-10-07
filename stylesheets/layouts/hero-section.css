@@ -29,7 +29,7 @@
     font-size: var(--fs-600);
     text-transform: uppercase;
 
-    transition: opacity 250ms ease;
+    transition: var(--trns-button-hover);
 }
 
 .hero__cta:hover {

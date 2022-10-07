@@ -19,7 +19,7 @@
     color: var(--cl-grullo);
 }
 
-.external-links-list {
+.external-links-list {    
     display: flex;
     flex-direction: column;
     gap: 1em;
