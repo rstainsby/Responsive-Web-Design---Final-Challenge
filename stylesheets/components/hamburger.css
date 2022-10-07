@@ -1,0 +1,27 @@
+.hamburger {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    height: 3px; 
+    background-color: black;
+    border-radius: 100px;   
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+}
+
+.hamburger::before {
+    transform:translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}

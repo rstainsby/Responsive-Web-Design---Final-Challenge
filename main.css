@@ -1,0 +1,53 @@
+@import url("./stylesheets/variables/colours.css");
+@import url("./stylesheets/variables/fonts.css");
+@import url("./stylesheets/components/all.css");
+@import url("./stylesheets/layouts/all.css");
+
+/* a stylesheet for all generic stylings that can be applied throughout the application */
+:root {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: var(--fs-400);    
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 1000px) {
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
