@@ -1,14 +1,15 @@
 :root {
+    --fs-300: 1rem;
     --fs-400: 1.125rem;
     --fs-500: 1.3125rem;
     --fs-600: 1.5rem;
     --fs-700: 1.875rem;
     --fs-900: 2.25rem;
-    --fs-xl: clamp(2.25rem, 5vw + 1rem, 5.625rem);
+    --fs-xl: clamp(2.75rem, 5vw + 1rem, 4rem);
 
     --cl-dark-blue: #2E323F;
     --cl-medium-blue: #3B4050;
-    --cl-light-blue: #6F737F;
+    --cl-light-blue: #aab0c3;
     --cl-grullo: #A59678;
     --cl-white: #FFFFFF;
 
@@ -48,6 +49,7 @@ img {
     position: relative;
     width: 80%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .flex {
@@ -273,7 +275,48 @@ img {
     font-weight: 700;
 }
 
+/* contact section */
+.contact {
+    padding: 5em 0;
+    color: var(--cl-light-blue);
+    background-color: var(--cl-medium-blue);
+}
 
+.contact .flex {
+    gap: 2em;
+}
+
+.contact__title {
+    color: var(--cl-white);
+    margin-bottom: 0.75em;
+    font-family: 'Oswald', serif;
+    font-weight: 700;
+    font-size: var(--fs-xl);
+    line-height: 110%;
+    text-align: center;
+}
+
+.about-us__title, .external-links__title {
+    color: var(--cl-grullo);
+    font-family: 'Oswald', serif;
+    font-weight: 700;
+    font-size: var(--fs-500);
+}
+
+.external-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0;
+    list-style: none;
+}
+
+.external-links-list__link {
+    display: block;
+    color: var(--cl-light-blue);
+    font-size: var(--fs-300);
+    text-decoration: none;
+}
 
 @media only screen and (min-width: 700px) {
     .nav {        
@@ -299,7 +342,7 @@ img {
     }
 
     .hero__title {
-        margin-bottom: 0;
+        margin-bottom: 0.5em;
     }
 
     .about__card {
@@ -308,6 +351,13 @@ img {
 
     .about__right-column {
         flex-direction: row;
+    }
+
+    .external-links {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        gap: 1em;
     }
 }
 
@@ -333,5 +383,19 @@ img {
         max-width: 400px;
         align-self: flex-start;
         flex-direction: column;
+    }
+
+    .contact .flex {
+        gap: 5em;
+    }
+
+    .about-us {
+        align-self: flex-start;
+    }
+
+    .external-links {
+        width: fit-content;
+        flex-shrink: 0;
+        gap: 5em;
     }
 }
