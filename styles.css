@@ -1,4 +1,5 @@
 :root {
+    --fs-300: 1rem;
     --fs-400: 1.125rem;
     --fs-500: 1.3125rem;
     --fs-600: 1.5rem;
@@ -8,7 +9,7 @@
 
     --cl-dark-blue: #2E323F;
     --cl-medium-blue: #3B4050;
-    --cl-light-blue: #6F737F;
+    --cl-light-blue: #aab0c3;
     --cl-grullo: #A59678;
     --cl-white: #FFFFFF;
 
@@ -271,6 +272,44 @@ img {
 .about__card__title {
     margin-bottom: 0.75em;
     font-weight: 700;
+}
+
+/* contact section */
+.contact {
+    padding: 5em 0;
+    color: var(--cl-light-blue);
+    background-color: var(--cl-medium-blue);
+}
+
+.contact__title {
+    color: var(--cl-white);
+    margin-bottom: 0.5em;
+    font-family: 'Oswald', serif;
+    font-weight: 700;
+    font-size: var(--fs-xl);
+    line-height: 110%;
+}
+
+.about-us__title, .external-links__title {
+    color: var(--cl-grullo);
+    font-family: 'Oswald', serif;
+    font-weight: 700;
+    font-size: var(--fs-500);
+}
+
+.external-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0;
+    list-style: none;
+}
+
+.external-links-list__link {
+    display: block;
+    color: var(--cl-light-blue);
+    font-size: var(--fs-300);
+    text-decoration: none;
 }
 
 
