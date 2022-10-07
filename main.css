@@ -1,5 +1,4 @@
-@import url("./stylesheets/variables/colours.css");
-@import url("./stylesheets/variables/fonts.css");
+@import url("./stylesheets/variables/all.css");
 @import url("./stylesheets/components/all.css");
 @import url("./stylesheets/layouts/all.css");
 
