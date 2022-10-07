@@ -1,0 +1,103 @@
+/* nav toggle */
+.nav-toggle {
+    position: absolute;
+    left: 0;
+
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: var(--trns-button-hover);
+}
+
+.nav-toggle:hover {
+    opacity: 0.75;
+}
+
+.nav-toggle--visible {
+    visibility: hidden;
+}
+
+/* nav */
+.navbar {
+    padding: 1em 0;
+    background-color: var(--cl-dark-blue);
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 2em;
+    margin-top: 1.5em;
+
+    /*hiding element rather than removing helps with accessibility*/
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.nav__item {
+    width: fit-content;
+    transition: var(--trns-button-hover);
+}
+
+.nav__item:hover {
+    opacity: 0.7;
+}
+
+.nav__item--button {
+    padding: 0.25em 0.75em;
+    border-radius: 100px;
+    background-color: var(--cl-white);
+}
+
+.nav__item--button > .nav__link {
+    color: var(--cl-dark-blue);
+}
+
+.nav__link {
+    color: var(--cl-white);   
+    text-decoration: none;    
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 700px) {
+    .nav {        
+        margin: 0;
+        flex-direction: row;
+
+        visibility: visible;
+        height: auto;
+        position: relative;  
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        align-items: center;
+    }
+}

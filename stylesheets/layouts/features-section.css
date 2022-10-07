@@ -1,0 +1,87 @@
+/* features section */
+.features {
+    padding: 5em 0;
+    background-color: #dcdcdc;
+}
+
+.features > .flex {
+    gap: 4em;
+}
+
+.feature-info {
+    text-align: center;
+}
+
+.feature-info__title {
+    margin-bottom: 0.6em;
+    color: var(--cl-grullo);
+}
+
+/* about section */
+.about {
+    padding: 5em 0;
+}
+
+.about > .flex {
+    gap: 3em;
+}
+
+.about__title {
+    margin-bottom: 0.6em;
+    color: var(--cl-grullo);
+}
+
+.about__main-text {
+    margin-bottom: 1em;
+    font-size: var(--fs-500);
+}
+
+.about__img {
+    margin-bottom: 1em;
+}
+
+.about__right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.about__card {
+    padding: 2em;
+    color: white;
+    background-color: var(--cl-medium-blue);
+    text-align: center;
+}
+
+.about__card__title {
+    margin-bottom: 0.75em;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 700px) {
+    .about__card {
+        padding: 1.5em;
+    }
+
+    .about__right-column {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .about__card {
+        margin-left: auto;
+        padding: 2em;
+    }
+
+    .about__left-column {
+        width: 65%;
+    }
+
+    .about__right-column {
+        width: 30%;
+        max-width: 400px;
+        align-self: flex-start;
+        flex-direction: column;
+    }
+}
